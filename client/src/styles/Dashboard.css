@@ -1,0 +1,414 @@
+/* ==========================================
+   DASHBOARD
+========================================== */
+
+.dashboard {
+  width: 100%;
+  min-height: calc(100vh - 80px);
+
+  padding: 30px;
+
+  color: #111827;
+
+  box-sizing: border-box;
+
+  background:
+    linear-gradient(
+      rgba(5, 12, 22, 0.72),
+      rgba(5, 12, 22, 0.72)
+    ),
+    url("https://c4.wallpaperflare.com/wallpaper/479/101/113/germany-saxony-gorlitz-hall-historical-literature-wallpaper-preview.jpg");
+
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+
+/* ==========================================
+   HEADER
+========================================== */
+
+.dashboard-header {
+  margin-bottom: 30px;
+}
+
+.dashboard-header .ant-typography:first-child {
+  color: #ffffff !important;
+  font-weight: 700;
+  margin-bottom: 4px;
+}
+
+.dashboard-header .ant-typography:last-child {
+  color: #e5e7eb !important;
+  font-size: 15px;
+}
+
+
+/* ==========================================
+   STATISTICS
+========================================== */
+
+.stats-row {
+  width: 100%;
+}
+
+.stat-card {
+  width: 100%;
+  min-height: 195px;
+
+  text-align: center;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background: rgba(255, 255, 255, 0.96) !important;
+
+  border: 1px solid rgba(255, 255, 255, 0.9) !important;
+
+  border-radius: 18px !important;
+
+  box-shadow:
+    0 10px 30px rgba(0, 0, 0, 0.25);
+
+  transition: all 0.3s ease;
+}
+
+.stat-card:hover {
+  transform: translateY(-5px);
+
+  box-shadow:
+    0 18px 40px rgba(0, 0, 0, 0.30);
+}
+
+.stat-card .ant-card-body {
+  width: 100%;
+  padding: 25px !important;
+}
+
+.stat-icon {
+  font-size: 36px;
+
+  color: #2563eb;
+
+  margin-bottom: 10px;
+}
+
+.stat-card .ant-typography {
+  color: #111827 !important;
+}
+
+.stat-card h2 {
+  margin: 5px 0 8px !important;
+
+  font-size: 30px;
+  font-weight: 700;
+}
+
+.stat-card .ant-typography:last-child {
+  color: #4b5563 !important;
+
+  font-size: 14px;
+}
+
+
+/* ==========================================
+   GLASS CARD
+========================================== */
+
+.glass-card {
+  background: rgba(255, 255, 255, 0.96) !important;
+
+  border: 1px solid rgba(255, 255, 255, 0.9) !important;
+
+  border-radius: 18px !important;
+
+  box-shadow:
+    0 10px 30px rgba(0, 0, 0, 0.20);
+}
+
+.glass-card .ant-card-body {
+  background: transparent !important;
+}
+
+
+/* ==========================================
+   CONTINUE READING
+========================================== */
+
+.continue-reading {
+  width: 100%;
+
+  margin: 35px 0;
+
+  display: flex;
+
+  justify-content: space-between;
+
+  align-items: center;
+
+  box-sizing: border-box;
+}
+
+.continue-reading .ant-card-body {
+  width: 100%;
+
+  display: flex;
+
+  justify-content: space-between;
+
+  align-items: center;
+
+  padding: 28px !important;
+}
+
+.continue-info {
+  flex: 1;
+
+  min-width: 0;
+}
+
+.continue-reading .ant-typography {
+  color: #111827 !important;
+}
+
+.continue-reading h3 {
+  margin-bottom: 12px !important;
+
+  font-weight: 700;
+}
+
+.book-title {
+  color: #111827 !important;
+
+  font-size: 16px;
+}
+
+.book-author {
+  color: #4b5563 !important;
+}
+
+.continue-reading .ant-progress {
+  max-width: 600px;
+
+  margin-top: 10px;
+}
+
+.continue-button {
+  margin-left: 30px;
+
+  flex-shrink: 0;
+
+  background: #2563eb !important;
+
+  border-color: #2563eb !important;
+
+  border-radius: 10px !important;
+}
+
+
+/* ==========================================
+   SECTION TITLE
+========================================== */
+
+.section-title {
+  color: #ffffff !important;
+
+  margin-top: 20px !important;
+
+  margin-bottom: 20px !important;
+
+  font-weight: 700 !important;
+}
+
+
+/* ==========================================
+   BOOK CARD
+========================================== */
+
+.book-card {
+  height: 100%;
+
+  transition: all 0.3s ease;
+}
+
+.book-card:hover {
+  transform: translateY(-5px);
+
+  box-shadow:
+    0 18px 40px rgba(0, 0, 0, 0.30);
+}
+
+.book-card .ant-card-body {
+  padding: 20px !important;
+}
+
+.book-card .ant-typography {
+  color: #111827 !important;
+}
+
+.book-card h5 {
+  margin-bottom: 5px !important;
+
+  font-size: 17px;
+
+  font-weight: 700;
+}
+
+.book-card .author {
+  color: #4b5563 !important;
+
+  font-size: 14px;
+}
+
+
+/* ==========================================
+   BOOK COVER
+========================================== */
+
+.cover {
+  width: 100%;
+
+  height: 180px;
+
+  border-radius: 12px;
+
+  margin-bottom: 15px;
+
+  display: flex;
+
+  justify-content: center;
+
+  align-items: center;
+
+  font-size: 60px;
+
+  color: #ffffff;
+
+  background:
+    linear-gradient(
+      135deg,
+      #2563eb,
+      #0f172a
+    );
+}
+
+
+/* ==========================================
+   BOOK BOTTOM
+========================================== */
+
+.book-bottom {
+  display: flex;
+
+  justify-content: space-between;
+
+  align-items: center;
+
+  margin-top: 20px;
+
+  color: #4b5563;
+
+  font-size: 13px;
+}
+
+
+/* ==========================================
+   EMPTY BOOKS
+========================================== */
+
+.empty-books {
+  min-height: 250px;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+}
+
+.empty-books .ant-empty-description {
+  color: #4b5563 !important;
+}
+
+
+/* ==========================================
+   LOADING
+========================================== */
+
+.dashboard-loading {
+  min-height: calc(100vh - 80px);
+
+  display: flex;
+
+  flex-direction: column;
+
+  justify-content: center;
+
+  align-items: center;
+
+  gap: 15px;
+
+  color: #ffffff;
+
+  background:
+    linear-gradient(
+      rgba(5, 12, 22, 0.80),
+      rgba(5, 12, 22, 0.80)
+    ),
+    url("https://c4.wallpaperflare.com/wallpaper/479/101/113/germany-saxony-gorlitz-hall-historical-literature-wallpaper-preview.jpg");
+
+  background-size: cover;
+
+  background-position: center;
+}
+
+.dashboard-loading p {
+  color: #ffffff;
+
+  font-size: 16px;
+}
+
+
+/* ==========================================
+   RESPONSIVE
+========================================== */
+
+@media (max-width: 992px) {
+
+  .dashboard {
+    padding: 25px;
+  }
+
+  .continue-reading .ant-card-body {
+    flex-direction: column;
+
+    align-items: flex-start;
+
+    gap: 20px;
+  }
+
+  .continue-button {
+    margin-left: 0;
+  }
+
+}
+
+
+@media (max-width: 576px) {
+
+  .dashboard {
+    padding: 20px;
+  }
+
+  .dashboard-header h2 {
+    font-size: 24px !important;
+  }
+
+  .stat-card {
+    min-height: 170px;
+  }
+
+}

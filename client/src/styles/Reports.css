@@ -1,0 +1,141 @@
+.reports-page {
+    padding: 30px;
+    min-height: 100vh;
+}
+
+.reports-header {
+    margin-bottom: 25px;
+}
+
+.reports-header h2 {
+    margin-bottom: 5px;
+}
+
+.reports-header p {
+    color: #6b7280;
+}
+
+.report-stat-row {
+    margin-bottom: 20px;
+}
+
+.report-card {
+    border-radius: 14px !important;
+    border: 1px solid #e5e7eb !important;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.05);
+}
+
+.report-card .ant-card-head {
+    font-weight: 600;
+}
+
+.report-card .ant-statistic-title {
+    color: #6b7280;
+}
+
+.report-card .ant-statistic-content {
+    color: #111827;
+    font-weight: 700;
+}
+
+.report-section {
+    margin-bottom: 20px;
+}
+
+.status-report,
+.rating-report {
+    display: flex;
+    flex-direction: column;
+    gap: 22px;
+}
+
+.status-row {
+    display: grid;
+    grid-template-columns: 140px 1fr 50px;
+    align-items: center;
+    gap: 12px;
+}
+
+.status-label {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+.report-progress {
+    height: 10px;
+    background: #e5e7eb;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.report-progress-fill {
+    height: 100%;
+    border-radius: 20px;
+    background: #2563eb;
+    transition: width 0.3s ease;
+}
+
+.percentage {
+    text-align: right;
+    font-weight: 600;
+}
+
+.rating-row {
+    display: grid;
+    grid-template-columns: 90px 1fr 35px;
+    align-items: center;
+    gap: 12px;
+}
+
+.rating-name {
+    font-weight: 500;
+}
+
+.category-list {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.category-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 12px 14px;
+    border-radius: 8px;
+    background: #f8fafc;
+}
+
+.report-rating {
+    display: inline-flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.reports-loading {
+    min-height: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+}
+
+@media (max-width: 768px) {
+    .reports-page {
+        padding: 20px;
+    }
+
+    .status-row {
+        grid-template-columns: 1fr 45px;
+    }
+
+    .status-label {
+        grid-column: 1 / -1;
+    }
+
+    .report-progress {
+        width: 100%;
+    }
+}
