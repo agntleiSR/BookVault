@@ -71,7 +71,7 @@ Open this URL in your browser.
 
 # 📖 How to Use
 
-1. Open `http://localhost:5173`
+1. Open `http://localhost:5173` or `http://localhost:5174`
 2. Register an account if you are a new user.
 3. Log in using your account.
 4. Use the sidebar to navigate through the system.
