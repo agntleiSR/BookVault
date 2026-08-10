@@ -1,10 +1,6 @@
-/* =========================================
-   SIDEBAR
-========================================= */
 
 .sidebar {
   position: fixed !important;
-
   top: 0;
   left: 0;
   bottom: 0;
@@ -16,70 +12,50 @@
   height: 100vh !important;
 
   background: #071423 !important;
-
   border-right: 1px solid rgba(255, 255, 255, 0.08);
 
   z-index: 1000;
-
   overflow: hidden !important;
 
   box-sizing: border-box;
 }
 
-
-/* =========================================
-   LOGO
-========================================= */
-
 .logo {
-  height: 80px;
+  height: 70px;
 
   display: flex;
-
   align-items: center;
-
   justify-content: center;
 
-  gap: 10px;
+  gap: 8px;
 
   color: #ffffff;
-
   user-select: none;
 }
 
 .logo-icon {
-  font-size: 25px;
+  font-size: 22px;
+  line-height: 1;
 }
 
 .logo-text {
-  font-size: 23px;
-
+  font-size: 19px;
   font-weight: 700;
 
   color: #ffffff;
+
+  white-space: nowrap;
 }
-
-
-/* =========================================
-   ANT DESIGN MENU
-========================================= */
 
 .sidebar-menu {
   background: transparent !important;
-
   border: none !important;
 
   margin-top: 15px;
 }
 
-
-/* =========================================
-   MENU ITEM
-========================================= */
-
 .sidebar .ant-menu-item {
   height: 48px !important;
-
   line-height: 48px !important;
 
   margin: 8px 13px !important;
@@ -91,38 +67,20 @@
   color: #cbd5e1 !important;
 
   font-size: 14px;
-
   font-weight: 500;
 }
-
-
-/* =========================================
-   LINK
-========================================= */
 
 .sidebar .ant-menu-item a {
   color: #cbd5e1 !important;
 }
 
-
-/* =========================================
-   ICON
-========================================= */
-
 .sidebar .ant-menu-item .anticon {
   color: #cbd5e1 !important;
-
   font-size: 15px;
 }
 
-
-/* =========================================
-   HOVER
-========================================= */
-
 .sidebar .ant-menu-item:hover {
   background: rgba(59, 130, 246, 0.15) !important;
-
   color: #ffffff !important;
 }
 
@@ -133,11 +91,6 @@
 .sidebar .ant-menu-item:hover .anticon {
   color: #ffffff !important;
 }
-
-
-/* =========================================
-   SELECTED
-========================================= */
 
 .sidebar .ant-menu-item-selected {
   background: linear-gradient(
@@ -157,17 +110,9 @@
   color: #ffffff !important;
 }
 
-
-/* Remove Ant Design selected line */
-
 .sidebar .ant-menu-item-selected::after {
   display: none !important;
 }
-
-
-/* =========================================
-   REMOVE SIDEBAR SCROLLBAR
-========================================= */
 
 .sidebar::-webkit-scrollbar {
   display: none;
@@ -177,13 +122,7 @@
   scrollbar-width: none;
 }
 
-
-/* =========================================
-   RESPONSIVE
-========================================= */
-
 @media (max-width: 992px) {
-
   .sidebar {
     position: fixed !important;
 
@@ -195,5 +134,4 @@
 
     transition: transform 0.3s ease;
   }
-
 }

@@ -1,3 +1,4 @@
+
 import { Layout, Menu, Modal } from "antd";
 
 import {
@@ -37,21 +38,20 @@ export default function Sidebar() {
   };
 
   return (
-    <Sider
-      className="sidebar"
-      width={250}
-    >
-      <div className="logo">
-        <span>📚</span>
-        <h2>BookVault</h2>
+    <Sider className="sidebar" width={250}>
+      
+      {/* LOGO */}
+      <div className="sidebar-logo">
+        <span className="sidebar-logo-icon">📚</span>
+        <span className="sidebar-logo-text">BookVault</span>
       </div>
 
+      {/* MENU */}
       <Menu
         theme="dark"
         mode="inline"
         selectedKeys={[location.pathname]}
       >
-
         <Menu.Item
           key="/dashboard"
           icon={<HomeOutlined />}
@@ -88,8 +88,8 @@ export default function Sidebar() {
         >
           Logout
         </Menu.Item>
-
       </Menu>
+
     </Sider>
   );
 }
