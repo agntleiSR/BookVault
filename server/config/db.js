@@ -1,27 +1,34 @@
 const sql = require("mssql/msnodesqlv8");
 
 const dbConfig = {
-    connectionString:
-        "Driver={ODBC Driver 18 for SQL Server};" +
-        "Server=(localdb)\\MSSQLLocalDB;" +
-        "Database=BookVaultDB;" +
-        "Trusted_Connection=Yes;" +
-        "TrustServerCertificate=Yes;"
+  connectionString:
+    "Driver={ODBC Driver 18 for SQL Server};" +
+    "Server=(localdb)\\MSSQLLocalDB;" +
+    "Database=BookVaultDB;" +
+    "Trusted_Connection=Yes;" +
+    "TrustServerCertificate=Yes;",
 };
+
+let pool;
 
 const connectDB = async () => {
-    try {
-        await sql.connect(dbConfig);
+  try {
+    pool = await sql.connect(dbConfig);
 
-        console.log("✅ SQL Server connected successfully.");
-        console.log("✅ Database: BookVaultDB");
-    } catch (error) {
-        console.error("❌ SQL Server connection failed:");
-        console.error(error);
-    }
+    console.log("SQL Server connected successfully.");
+    console.log("Database: BookVaultDB");
+
+    return pool;
+  } catch (error) {
+    console.error("Database connection error:", error);
+    throw error;
+  }
 };
 
+const getDB = () => pool;
+
 module.exports = {
-    sql,
-    connectDB
+  sql,
+  connectDB,
+  getDB,
 };
