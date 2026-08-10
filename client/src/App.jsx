@@ -17,6 +17,7 @@ import Reports from "./pages/Reports";
 import Settings from "./pages/Settings";
 import Notifications from "./pages/Notifications";
 
+
 function ProtectedRoute({ children }) {
   const isLoggedIn = localStorage.getItem("isLoggedIn");
 
@@ -26,6 +27,7 @@ function ProtectedRoute({ children }) {
 
   return children;
 }
+
 
 function Logout() {
   const navigate = useNavigate();
@@ -37,10 +39,15 @@ function Logout() {
   return null;
 }
 
+
+
 function App() {
   return (
     <BrowserRouter>
       <Routes>
+
+     
+
         <Route
           path="/"
           element={<Navigate to="/splash" replace />}
@@ -60,6 +67,9 @@ function App() {
           path="/register"
           element={<Register />}
         />
+
+
+     
 
         <Route
           path="/dashboard"
@@ -124,15 +134,19 @@ function App() {
           }
         />
 
+
+      
         <Route
           path="/logout"
           element={<Logout />}
         />
 
+
         <Route
           path="*"
           element={<Navigate to="/splash" replace />}
         />
+
       </Routes>
     </BrowserRouter>
   );
