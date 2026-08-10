@@ -1,0 +1,40 @@
+.settings-page {
+  min-height: 100%;
+  padding: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.settings-card {
+  width: 100%;
+  max-width: 600px;
+  text-align: center;
+  padding: 40px 30px;
+  border-radius: 18px !important;
+  border: 1px solid rgba(255, 255, 255, 0.08) !important;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+}
+
+.settings-icon {
+  font-size: 50px;
+  margin-bottom: 15px;
+}
+
+.settings-card h2 {
+  margin-bottom: 10px;
+}
+
+.settings-card span {
+  color: #6b7280;
+}
+
+.settings-coming-soon {
+  display: inline-block;
+  margin-top: 25px;
+  padding: 10px 20px;
+  border-radius: 20px;
+  background: #f1f5f9;
+  color: #2563eb;
+  font-weight: 600;
+}

@@ -1,0 +1,199 @@
+/* =========================================
+   SIDEBAR
+========================================= */
+
+.sidebar {
+  position: fixed !important;
+
+  top: 0;
+  left: 0;
+  bottom: 0;
+
+  width: 250px !important;
+  min-width: 250px !important;
+  max-width: 250px !important;
+
+  height: 100vh !important;
+
+  background: #071423 !important;
+
+  border-right: 1px solid rgba(255, 255, 255, 0.08);
+
+  z-index: 1000;
+
+  overflow: hidden !important;
+
+  box-sizing: border-box;
+}
+
+
+/* =========================================
+   LOGO
+========================================= */
+
+.logo {
+  height: 80px;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  gap: 10px;
+
+  color: #ffffff;
+
+  user-select: none;
+}
+
+.logo-icon {
+  font-size: 25px;
+}
+
+.logo-text {
+  font-size: 23px;
+
+  font-weight: 700;
+
+  color: #ffffff;
+}
+
+
+/* =========================================
+   ANT DESIGN MENU
+========================================= */
+
+.sidebar-menu {
+  background: transparent !important;
+
+  border: none !important;
+
+  margin-top: 15px;
+}
+
+
+/* =========================================
+   MENU ITEM
+========================================= */
+
+.sidebar .ant-menu-item {
+  height: 48px !important;
+
+  line-height: 48px !important;
+
+  margin: 8px 13px !important;
+
+  width: calc(100% - 26px) !important;
+
+  border-radius: 12px !important;
+
+  color: #cbd5e1 !important;
+
+  font-size: 14px;
+
+  font-weight: 500;
+}
+
+
+/* =========================================
+   LINK
+========================================= */
+
+.sidebar .ant-menu-item a {
+  color: #cbd5e1 !important;
+}
+
+
+/* =========================================
+   ICON
+========================================= */
+
+.sidebar .ant-menu-item .anticon {
+  color: #cbd5e1 !important;
+
+  font-size: 15px;
+}
+
+
+/* =========================================
+   HOVER
+========================================= */
+
+.sidebar .ant-menu-item:hover {
+  background: rgba(59, 130, 246, 0.15) !important;
+
+  color: #ffffff !important;
+}
+
+.sidebar .ant-menu-item:hover a {
+  color: #ffffff !important;
+}
+
+.sidebar .ant-menu-item:hover .anticon {
+  color: #ffffff !important;
+}
+
+
+/* =========================================
+   SELECTED
+========================================= */
+
+.sidebar .ant-menu-item-selected {
+  background: linear-gradient(
+    90deg,
+    #2563eb,
+    #1d4ed8
+  ) !important;
+
+  color: #ffffff !important;
+}
+
+.sidebar .ant-menu-item-selected a {
+  color: #ffffff !important;
+}
+
+.sidebar .ant-menu-item-selected .anticon {
+  color: #ffffff !important;
+}
+
+
+/* Remove Ant Design selected line */
+
+.sidebar .ant-menu-item-selected::after {
+  display: none !important;
+}
+
+
+/* =========================================
+   REMOVE SIDEBAR SCROLLBAR
+========================================= */
+
+.sidebar::-webkit-scrollbar {
+  display: none;
+}
+
+.sidebar {
+  scrollbar-width: none;
+}
+
+
+/* =========================================
+   RESPONSIVE
+========================================= */
+
+@media (max-width: 992px) {
+
+  .sidebar {
+    position: fixed !important;
+
+    width: 220px !important;
+    min-width: 220px !important;
+    max-width: 220px !important;
+
+    transform: translateX(-100%);
+
+    transition: transform 0.3s ease;
+  }
+
+}
